@@ -40,8 +40,8 @@ public class ValidateAPI {
 	@Test
 	public void postAPI() throws InterruptedException 
 	{
-		Thread.sleep(8000);
-		
+
+		Thread.sleep(11000);		
 	 ValidatableResponse res=given().log().all().contentType(ContentType.JSON).
 			   		  body("{\"name\":\"hely\",\"job\":\"leader\"}").
 			   		  when().post("/api/users").
