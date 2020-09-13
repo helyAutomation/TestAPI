@@ -51,9 +51,9 @@ public class ValidateAPI {
 	   
 	   //long restime=res.time();
 	
-//	   JsonPath js = new JsonPath(response);
-//	   int pages=js.getInt("total_pages");
-	   //Assert.assertEquals(pages, 2);
+	   JsonPath js = new JsonPath(res.toString());
+	   int pages=js.getInt("total_pages");
+	   Assert.assertEquals(pages, 2);
 	}
 	
 	
